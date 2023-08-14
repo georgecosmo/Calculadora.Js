@@ -34,27 +34,27 @@ const auth = () => {
 const messagePerImc = (imc) => {
   if (rdbF.checked) {
     if (imc < 19) {
-      mensagem.textContent = "Peso abaixo do normal";
+      mensagem.textContent = "Precisando se alimentar melhor.";
     } else if (imc < 23.9) {
-      mensagem.textContent = "Peso Normal";
+      mensagem.textContent = "Boa, tá indo bem!!";
     } else if (imc < 28.9) {
-      mensagem.textContent = "Obesidade leve";
+      mensagem.textContent = "Cuidado, tá perdendo o controle.";
     } else if (imc < 38.9) {
-      mensagem.textContent = "Obesidade moderada";
+      mensagem.textContent = "Calma lá, daqui a pouco é caixão.";
     } else {
-      mensagem.textContent = "Obesidade mórbida";
+      mensagem.textContent = "Um milagre seria bom...";
     }
   } else {
     if (imc < 20) {
-      mensagem.textContent = "Peso abaixo do normal";
+      mensagem.textContent = "Precisando se alimentar melhor.";
     } else if (imc < 24.9) {
-      mensagem.textContent = "Peso Normal";
+      mensagem.textContent = "Boa, tá indo bem!!";
     } else if (imc < 29.9) {
-      mensagem.textContent = "Obesidade leve";
+      mensagem.textContent = "Cuidado, tá perdendo o controle.";
     } else if (imc < 39.9) {
-      mensagem.textContent = "Obesidade moderada";
+      mensagem.textContent = "Calma lá, daqui a pouco é caixão.";
     } else {
-      mensagem.textContent = "Obesidade mórbida";
+      mensagem.textContent = "Um milagre seria bom...";
     }
   }
 };

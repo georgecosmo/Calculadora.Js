@@ -5,10 +5,27 @@
 * {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 body{
   background-image: url(/img/forest.jpg) ;
+}
+
+header{
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#lista{
+  transition: 0.3s ease-in-out;
+}
+
+#lista:hover{
+  transform: scale(1.1);
 }
 
 .formsContainer {
@@ -23,23 +40,11 @@ body{
   color: rgb(255, 255, 255);
   padding: 20px 0;
   border-radius: 30px;
-}
-
-#exe{
-  position: absolute;
-  width: 27%;
-  left: 5%;
-}
-
-#exe2{
-  position: absolute;
-  width: 27%;
-  right: 5%; 
-  top: 25%;
+  margin-top: 4%;
 }
 
 .formsContainer h1 {
-  padding: 10px 0;
+  padding: 16px 0;
   font-size: 25px;
 }
 
@@ -70,16 +75,13 @@ body{
 .formsContainer button:hover {
   background: none;
   border: 2px solid rgb(255, 255, 255);
-  margin: 10px;
-  transform: scale(1.1);
-  
 }
 
 .formsContainer button:focus {
   outline: 2px solid rgb(255, 255, 255);
-  box-shadow: 0 0 30px rgb(255, 255, 255);
 }
 
 .radioBtn {
   border: none;
 }
+
