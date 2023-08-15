@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exibe o mês</title>
-<link rel="stylesheet" href="exibeOmes.css">
+<link rel="stylesheet" href="mês.css">
 </head>
 <body>
-    <section>
+
+    <!-- <section>
         <div class="container">
             <h2>Exibe o mês</h2>
             <div class="inputDiv">
@@ -29,8 +30,19 @@
             </div>
         </div>
         
+    </section> -->
+
+    <section>
+        <h2 id="mes">Janeiro</h2>
+
+        <div class="contador">
+            <img class="seta-esquerda" src="./img/arrow.png" alt="seta-esquerda" onclick="numDecrement()">
+            <h2 id="num">1</h2>
+            <img class="seta-direita" src="./img/arrow.png" alt="seta-direita" onclick="numIncrement()">
+        </div>
+
     </section>
 
-    <script src="exibeOmes.js"></script>
+    <script src="mes.js"></script>
 </body>
 </html>

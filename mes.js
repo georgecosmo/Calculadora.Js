@@ -1,23 +1,42 @@
-const numMes = document.getElementById("numMes");
-const mes = document.getElementById("mes");
-const btnExibir = document.getElementById("btnExibir");
-const btnLimpar = document.getElementById("btnLimpar");
-const btnMenu = document.getElementById("btnMenu");
 
-function auth(){
-    if(isNaN(numMes.value) || numMes.value == ""){
-        alert("Digite apenas numeros!")
-    } else if (numMes.value <= 0 || numMes.value > 12){
-        alert("Digite um número entre 1 e 12!")
-    } else{
-        return true;
+const mes = document.querySelector("#mes");
+const num = document.querySelector("#num");
+let numAtual = 1;
+
+function numIncrement(){
+    numAtual++;
+
+    if(numAtual > 12){
+        numAtual = 1;
     }
+    num.textContent = numAtual;
+    changeMes();
 }
 
+function numDecrement(){
+    numAtual = numAtual - 1;
 
+    if(numAtual < 1){
+        numAtual = 12;
+    }
+    num.textContent = numAtual;
+    changeMes();
+}
 
-function exibir(){
-    switch (parseInt(numMes.value)){
+function changeMes(){
+        if(numAtual < 4){
+            document.body.style.backgroundImage = "url('./img/inverno.jpg')"
+        }else if(numAtual < 6){
+            document.body.style.backgroundImage = "url('./img/primavera.webp')"
+        }else if(numAtual < 9){
+            document.body.style.backgroundImage = "url('./img/verao.jpg')"
+        } else if(numAtual < 12){
+            document.body.style.backgroundImage = "url('./img/outono.jpg')"
+        }
+
+        
+
+        switch (numAtual){
         case 1:
             mes.textContent = "Janeiro";
             break;
@@ -56,14 +75,3 @@ function exibir(){
             break;
     }
 }
-
-btnExibir.addEventListener("click", () => {
-    if(auth()){
-        exibir();
-    }
-})
-
-btnLimpar.addEventListener("click", () => {
-    numMes.value = "";
-    mes.textContent = "";
-})
