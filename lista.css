@@ -7,17 +7,67 @@
     font-weight: bold;
 }
 
+body{
+    background-image: url(/img/topography.svg);
+}
+
 header{
     background-color: black;
     padding: 2%;
     display: flex;
 }
 
-#h1color{
+#headerh1{
+    display: flex;
+    flex-direction: column;
     color: aliceblue;
+    transform: none;
+    margin-left: 4.5%;
 }
 
-#check{
-    margin-left: 15px;
+#atividades{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.507);
 }
+
+h1{
+    color: aliceblue;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+h1:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-device-width: 600px) {
+
+    #atividades{
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.507);
+    }
+
+    #headerh1{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: aliceblue;
+        transform: none;
+        margin-left: 4.5%;
+    }
+}
+
+
+
+
+
 
