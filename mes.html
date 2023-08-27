@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibe o mês</title>
+    <link rel="stylesheet" href="mes.css">
+</head>
+<body>
+
+    <section class="filter"></section>
+    <!-- <section>
+        <div class="container">
+            <h2>Exibe o mês</h2>
+            <div class="inputDiv">
+                <label for="numMes">
+                    Informe o número correspodente:
+                </label>
+                <input type="text" id="numMes" />
+            </div>
+
+            
+
+            <h3>O mês é: <span id="mes"></span></h3>
+
+            <div class="btnContainer">
+                <button id="btnExibir">Exibir</button>
+                <button id="btnLimpar">Limpar</button>
+                <button id="btnMenu">Menu</button>
+            </div>
+        </div>
+        
+    </section> -->
+
+    <section>
+        <h2 id="mes">Janeiro</h2>
+
+        <div class="contador">
+            <img class="seta-esquerda" src="./img/arrow.png" alt="seta-esquerda" onclick="numDecrement()">
+            <h2 id="num">1</h2>
+            <img class="seta-direita" src="./img/arrow.png" alt="seta-direita" onclick="numIncrement()">
+        </div>
+
+    </section>
+
+    <script src="mes.js"></script>
+</body>
+</html>
