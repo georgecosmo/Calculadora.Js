@@ -1,89 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
-body{
-    background-image: url(/img/topography.svg);
+body {
+  background-image: linear-gradient(45deg, black, rgb(121, 92, 168));
 }
 
-header{
-    background-color: black;
-    padding: 2%;
-    display: flex;
+header {
+  background-color: black;
+  padding: 2%;
+  display: flex;
 }
 
-#headerh1{
+#headerh1 {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  margin-left: 4.5%;
+}
+
+#atividades {
+  display: block;
+  text-decoration: none;
+  flex-direction: column;
+  padding: 3%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+p {
+  width: 50%;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.ativi {
+  display: block;
+  color: aliceblue;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.ativi:hover {
+  transform: scale(1.1);
+  padding-left: 5%;
+}
+
+@media screen and (max-device-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  #headerh1 {
+    text-align: center;
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    margin-left: 4.5%;
-}
+    transform: none;
+    width: 100%;
+  }
 
-#atividades{
-    display: block;
+  #atividades {
+    text-align: center;
     text-decoration: none;
+    display: flex;
     flex-direction: column;
     padding: 3%;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.507);
+  }
 }
-
-a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-p{
-    width: 50%;
-    color: aliceblue;
-    text-decoration: none;
-}
-
-.ativi{
-    display: block;
-    color: aliceblue;
-    padding: 15px;
-    transition: 0.3s ease-in-out;
-}
-
-.ativi:hover{
-    transform: scale(1.1);
-    padding-left: 5%;
-}
-
-@media screen and (max-device-width: 600px) {
-
-    header{
-        text-align: center;
-    }
-
-    #headerh1{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        color: aliceblue;
-        transform: none;
-        width: 100%;
-    }
-
-    #atividades{
-        text-align: center;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        padding: 3%;
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.507);
-    }   
-}
-
-
-
-
-
-
