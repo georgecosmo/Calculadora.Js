@@ -9,6 +9,7 @@
 
 body {
   background-image: linear-gradient(45deg, black, rgb(121, 92, 168));
+  height: 100vh;
 }
 
 header {

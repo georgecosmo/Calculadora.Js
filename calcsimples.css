@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-top: -70vh;
+  margin-top: -50vh;
 }
 
 #lista:hover {
@@ -38,7 +38,6 @@ body {
 .calculadora {
   color: aliceblue;
   font-family: "Dosis", sans-serif;
-
   background-color: black;
   border-radius: 15px;
   padding: 15px;
