@@ -34,13 +34,13 @@ function calcularTabuada(num) {
 }
 
 btnCalc.addEventListener("click", () => {
-  lista.innerText = "";
-
   if (isNaN(numInput.value) || numInput.value === "") {
     alert("Digite apenas números!");
-
+    numInput.value = "";
+    numInput.focus();
     return;
   }
+  lista.innerText = "";
 
   const num = Number(numInput.value);
 
